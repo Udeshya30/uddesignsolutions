@@ -9,25 +9,25 @@ const PROJECTS = [
     id: 'p3d',
     title: '3D Interactive Robot',
     thumb: '/thumbnails/project1.jpg',
-    tags: ['3D', 'WebGL'],
+    tags: ['Maya', 'substance painter', 'Keyshot', 'blender'],
     short: 'High-fidelity robot model with real-time rendering.',
     model: '/models/sample.glb'
   },
   {
     id: 'pai',
-    title: 'AI Ad Generator',
-    thumb: '/thumbnails/project2.jpg',
-    tags: ['AI', 'Automation'],
-    short: 'End-to-end ad creation powered by AI vision & NLP.',
-    demo: '/demos/ai-ad.mp4'
+    title: 'GalactiView - AR Space Exploration',
+    thumb: '/thumbnails/GalactiView.png',
+    tags: ['Android', 'ARFoundation', 'C#', 'Unity' ],
+    short: 'An AR-powered educational Android app built with Unity & ARCore.',
+    demo: '/demos/GalactiView.mp4'
   },
   {
     id: 'par',
-    title: 'AR Product Viewer',
-    thumb: '/thumbnails/project3.jpg',
-    tags: ['AR', 'Mobile'],
-    short: 'Try-on experience with markerless AR on web.',
-    demo: '/demos/ar-demo.mp4'
+    title: 'Desert Tactical Training - VR Sniper Challenge',
+    thumb: '/thumbnails/Desert Tactical Training.png',
+    tags: ['VR', 'Quest 2', 'Unity', 'C#'],
+    short: 'Standalone Oculus Quest 2 VR training mission in a harsh desert environment.',
+    demo: '/demos/Desert Tactical Training.mp4'
   }
 ]
 
