@@ -76,6 +76,7 @@
 // src/components/Hero.jsx
 import React, { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { Link, NavLink } from 'react-router-dom'
 import '../styles/components/_hero.scss'
 
 export default function Hero() {
@@ -134,9 +135,11 @@ export default function Hero() {
             <a className="btn btn-primary" href="#projects">
               View Work
             </a>
-            <a className="btn btn-outline" href="#contact">
+            <NavLink
+              to="/contact"
+              className= "btn btn-outline">
               Contact Us
-            </a>
+            </NavLink>
           </div>
         </motion.div>
 
@@ -155,7 +158,7 @@ export default function Hero() {
             }}
           />
           <img
-            src="/thumbnails/project1.jpg"
+            src="/thumbnails/hero-image.png"
             alt="3D showcase preview"
             className="hero-preview"
           />

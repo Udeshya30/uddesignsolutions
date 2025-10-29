@@ -62,28 +62,28 @@ export default function ModelShowcase() {
 
   const models = [
     {
-      name: 'Aviation Drone',
-      file: '/models/sample1.glb',
-      poster: '/models/poster.webp',
-      thumb: '/models/poster.webp'
+      name: 'Oakley Backpack',
+      file: '/models/bag.glb',
+      poster: '/models/bag (1).png',
+      thumb: '/models/bag (1).png'
     },
     {
-      name: 'Sports Car',
-      file: '/models/sample.glb',
-      poster: '/models/poster.webp',
-      thumb: '/models/poster.webp'
+      name: 'HILAND 16/18 Bike',
+      file: '/models/cycle.glb',
+      poster: '/models/cycle.png',
+      thumb: '/models/cycle.png'
     },
     {
-      name: 'Modern Chair',
-      file: '/models/sample1.glb',
-      poster: '/models/poster.webp',
-      thumb: '/models/poster.webp'
+      name: 'Panasonic HC-X2E-K',
+      file: '/models/video camera.glb',
+      poster: '/models/video camera.png',
+      thumb: '/models/video camera.png'
     },
     {
-      name: 'Sci-Fi Helmet',
-      file: '/models/sample.glb',
-      poster: '/models/poster.webp',
-      thumb: '/models/poster.webp'
+      name: 'Canon EOS 600D',
+      file: '/models/Camera.glb',
+      poster: '/models/Camera.png',
+      thumb: '/models/Camera.png'
     }
   ]
 

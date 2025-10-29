@@ -33,7 +33,7 @@ export default function IntroOverlay({ onFinish }) {
         >
           <video
             className="intro-video"
-            src="/videos/intro-loop.mp4"
+            src="/videos/intro-loop2.mp4"
             autoPlay
             muted
             loop
@@ -46,7 +46,7 @@ export default function IntroOverlay({ onFinish }) {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 1 }}
           >
-            {/* <h1 className="intro-logo">UD Design Solutions</h1> */}
+            <h1 className="intro-logo">UD Design Solutions</h1>
             {/* <p>Press any key or move mouse to enter</p> */}
           </motion.div>
 
