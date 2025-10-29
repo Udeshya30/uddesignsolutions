@@ -1,26 +1,34 @@
-import React, { useEffect, useState } from "react";
-import TopNavbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import ModelShowcase from "./components/ModelShowcase";
+// src/App.jsx
+import React, { Suspense, lazy } from 'react'
+import { Routes, Route } from 'react-router-dom'
+
+// shared layout components
+import Navbar from './components/ui/Navbar'
+import Footer from './components/ui/Footer'
+import ScrollTop from './components/ui/ScrollTop'
+
+// lazy-loaded pages
+const Home = lazy(() => import('./pages/Home'))
+const Projects = lazy(() => import('./pages/Projects'))
+const About = lazy(() => import('./pages/About'))
+const Contact = lazy(() => import('./pages/Contact'))
 
 export default function App() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <>
-      <TopNavbar className={scrolled ? "scrolled" : ""} />
-      <Hero />
-      <ModelShowcase />
-      {/* placeholder sections to test scroll */}
-      <section id="projects" style={{ height: "100vh", background: "#111" }}></section>
-      <section id="about" style={{ height: "100vh", background: "#222" }}></section>
-      <section id="contact" style={{ height: "100vh", background: "#333" }}></section>
-    </>
-  );
+    <div className="app-root">
+      <Navbar />
+
+      <Suspense fallback={<div className="page-loading">Loading…</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Suspense>
+
+      <Footer />
+      <ScrollTop />
+    </div>
+  )
 }

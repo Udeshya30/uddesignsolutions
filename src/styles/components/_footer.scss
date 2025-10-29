@@ -1,0 +1,123 @@
+@import '../_variables.scss';
+
+.site-footer {
+  background: #05060a;
+  color: #cfd6df;
+  padding: 3rem 1rem 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.95rem;
+  position: relative;
+  overflow: hidden;
+
+  .footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: $max-w;
+    margin: 0 auto 2rem;
+
+    .footer-brand {
+      flex: 1 1 260px;
+
+      .footer-logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, $primary, #38bdf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.3rem;
+      }
+
+      .footer-tagline {
+        color: $muted;
+        font-size: 0.95rem;
+      }
+    }
+
+    .footer-nav {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      a {
+        color: #cfd6df;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.25s ease;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      font-size: 1.3rem;
+
+      a {
+        color: #cfd6df;
+        transition: all 0.25s ease;
+
+        &:hover {
+          color: $primary;
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $max-w;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 1rem;
+
+    .footer-copy {
+      font-size: 0.9rem;
+      color: $muted;
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 1.2rem;
+      font-size: 0.9rem;
+
+      a {
+        color: $muted;
+        transition: color 0.25s ease;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $break-md) {
+    text-align: center;
+
+    .footer-main {
+      flex-direction: column;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 0.8rem;
+
+      .footer-legal {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

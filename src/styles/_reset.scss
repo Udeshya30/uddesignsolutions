@@ -1,0 +1,52 @@
+// src/styles/_reset.scss
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: $dark;
+  color: #e8edf4;
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: $max-w;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: $muted;
+  font-size: 1.05rem;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
