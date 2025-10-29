@@ -1,0 +1,78 @@
+/* ========= Global Style Sheet ========= */
+@use "../styles/variables" as *;
+
+
+/* Variables */
+$primary: #0078ff;
+$secondary: #ff5b00;
+$bg-color: #f9f9f9;
+$text-dark: #1a1a1a;
+$text-light: #fff;
+$font-main: 'Poppins', sans-serif;
+
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  color: $text-dark;
+  background-color: $bg-color;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+/* Reusable classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.btn.primary {
+  background: $primary;
+  color: white;
+  &:hover {
+    background: darken($primary, 10%);
+  }
+}
+
+.btn.outline {
+  border: 2px solid $primary;
+  color: $primary;
+  background: transparent;
+  &:hover {
+    background: $primary;
+    color: white;
+  }
+}
+
+section {
+  padding: 4rem 0;
+}
