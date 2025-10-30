@@ -87,7 +87,7 @@ export default function Navbar() {
             height="40"
             className="brand-logo"
           />
-          <span className="brand-text">UD Design Solutions</span>
+          <span className="brand-text">Design Solutions</span>
         </Link>
 
         <button
