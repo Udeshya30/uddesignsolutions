@@ -68,7 +68,7 @@ export default function Footer() {
         {/* Social Links */}
         <div className="footer-social">
           <a
-            href="https://linkedin.com/company/uddesignsolutions"
+            href="https://www.linkedin.com/company/ud-design-solutions/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"

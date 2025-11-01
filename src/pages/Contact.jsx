@@ -121,7 +121,7 @@ export default function Contact() {
 
           <div className="contact-social">
             <a
-              href="https://linkedin.com/company/uddesignsolutions"
+              href="https://www.linkedin.com/company/ud-design-solutions/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

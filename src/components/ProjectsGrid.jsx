@@ -37,7 +37,7 @@ export default function ProjectsGrid() {
   return (
     <section id="projects" className="projects-section">
       <div className="container">
-        <h2 className="section-title">Our Projects</h2>
+        <h2 className="section-title">Our Innovations</h2>
         <p className="section-subtitle">
           A selection of our latest 3D, AI, and AR/VR works.
         </p>
