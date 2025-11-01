@@ -116,7 +116,7 @@ export default function Contact() {
           <h3>Contact Details</h3>
           <p>
             <strong>Email:</strong>{' '}
-            <a href="mailto:hello@uddesign.io">hello@uddesign.io</a>
+            <a href="mailto:Uddesignsolutionstech@gmail.com">Uddesignsolutionstech@gmail.com</a>
           </p>
 
           <div className="contact-social">
