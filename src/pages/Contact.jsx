@@ -115,6 +115,10 @@ export default function Contact() {
         >
           <h3>Contact Details</h3>
           <p>
+            <strong>Phone no:</strong>{' '}
+            <a href="tel:9133275715">9133275715</a>
+          </p>
+          <p>
             <strong>Email:</strong>{' '}
             <a href="mailto:Uddesignsolutionstech@gmail.com">Uddesignsolutionstech@gmail.com</a>
           </p>
