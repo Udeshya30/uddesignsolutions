@@ -33,7 +33,7 @@ export default function IntroOverlay({ onFinish }) {
         >
           <video
             className="intro-video"
-            src="/videos/intro-loop2.mp4"
+            src="/videos/intro-loop3.mp4"
             autoPlay
             muted
             loop
