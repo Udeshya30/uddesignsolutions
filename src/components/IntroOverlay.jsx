@@ -9,7 +9,7 @@ export default function IntroOverlay({ onFinish }) {
     const handleInteraction = () => {
       if (!ready) {
         setReady(true)
-        setTimeout(onFinish, 1200) // wait for exit animation
+        setTimeout(onFinish, 1200) 
       }
     }
 
@@ -46,7 +46,7 @@ export default function IntroOverlay({ onFinish }) {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 1 }}
           >
-            <h1 className="intro-logo">UD Design Solutions</h1>
+            {/* <h1 className="intro-logo">UD Design Solutions</h1> */}
             {/* <p>Press any key or move mouse to enter</p> */}
           </motion.div>
 
